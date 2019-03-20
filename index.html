@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.sheet.css"/>
+    <meta charset="UTF-8">
+    <title>Outfit Picker</title>
+</head>
+<body>
+<div id="everything">
+    <h1>Outfit Picker</h1>
+    <h2>Select Shirt</h2>
+    <select id="ShirtType">
+        <option value="">--Select Shirt Type--</option>
+        <option value="1">Long Sleeve Top</option>
+        <option value="2">Short Sleeve Top</option>
+        <option value="3">Tank Top</option>
+        <option value="4">Polo</option>
+        <option value="5">V-Neck</option>
+        <option value="6">Jersey</option>
+        <option value="7">Turtleneck</option>
+        <option value="8">Hoody</option>
+        <option value="9">Flannel</option>
+        <option value="10">Crop Top</option>
+        <option value="11">Tube Top</option>
+        <option value="12">Blouse</option>
+        <option value="13">Dress Shirt</option>
+    </select>
+    <select id="ShirtColor">
+        <option value="">--Select Shirt Color--</option>
+        <option value="1">Red</option>
+        <option value="2">Orange</option>
+        <option value="3">Yellow</option>
+        <option value="4">Green</option>
+        <option value="5">Light Blue</option>
+        <option value="6">Dark Blue</option>
+        <option value="7">Purple</option>
+        <option value="8">Pink</option>
+        <option value="9">Black</option>
+        <option value="10">Grey</option>
+        <option value="11">White</option>
+    </select>
+    <select id="ShirtPattern">
+        <option value="">--Select Shirt Pattern--</option>
+        <option value="1">Plain</option>
+        <option value="2">Animal Print</option>
+        <option value="3">Camo</option>
+        <option value="4">Floral</option>
+        <option value="5">Graphic</option>
+        <option value="6">Ombre</option>
+        <option value="7">Plaid</option>
+        <option value="8">Polka Dot</option>
+        <option value="9">Stripes</option>
+        <option value="10">Multi</option>
+        <option value="11">Checkered</option>
+    </select>
+    <button id="addShirt" onclick="addShirt()" value="Submit">Add Shirt</button>
+    <br>
+    <h2>Select Pant</h2>
+    <select id="PantType">
+        <option value="">--Select Pant Type--</option>
+        <option value="1">Skinny Jeans</option>
+        <option value="2">Flare</option>
+        <option value="3">Cargo Pants</option>
+        <option value="4">Shorts</option>
+        <option value="5">Jean Shorts</option>
+        <option value="6">Overalls</option>
+        <option value="7">Ripped Jeans</option>
+        <option value="8">Track Pants</option>
+        <option value="9">Leggings</option>
+        <option value="10">Sweat Pants</option>
+    </select>
+    <select id="PantColor">
+        <option value="">--Select Pant Color--</option>
+        <option value="1">Red</option>
+        <option value="2">Orange</option>
+        <option value="3">Yellow</option>
+        <option value="4">Green</option>
+        <option value="5">Light Blue</option>
+        <option value="6">Dark Blue</option>
+        <option value="7">Purple</option>
+        <option value="8">Pink</option>
+        <option value="9">Black</option>
+        <option value="10">Grey</option>
+        <option value="11">White</option>
+    </select>
+    <select id="PantPattern">
+        <option value="">--Select Pant Pattern--</option>
+        <option value="1">Plain</option>
+        <option value="2">Animal Print</option>
+        <option value="3">Camo</option>
+        <option value="4">Floral</option>
+        <option value="5">Graphic</option>
+        <option value="6">Ombre</option>
+        <option value="7">Plaid</option>
+        <option value="8">Polka Dot</option>
+        <option value="9">Stripes</option>
+        <option value="10">Multi</option>
+        <option value="11">Checkered</option>
+    </select>
+    <button id="addPant" onclick="addPant()" value="Submit">Add Pant</button>
+    <br>
+    <h2>Select Other</h2>
+    <select id="Other">
+        <option value="">--Other--</option>
+        <option value="1">Casual Dress</option>
+        <option value="2">Cocktail Dress</option>
+        <option value="3">Short Skirt</option>
+        <option value="4">Long Skirt</option>
+        <option value="5">Jumpsuit</option>
+        <option value="6">Romper</option>
+        <option value="7">Formal Dress</option>
+        <option value="8">Maxi Dress</option>
+    </select>
+    <select id="OtherColor">
+        <option value="">--Select Other Color--</option>
+        <option value="1">Red</option>
+        <option value="2">Orange</option>
+        <option value="3">Yellow</option>
+        <option value="4">Green</option>
+        <option value="5">Light Blue</option>
+        <option value="6">Dark Blue</option>
+        <option value="7">Purple</option>
+        <option value="8">Pink</option>
+        <option value="9">Black</option>
+        <option value="10">Grey</option>
+        <option value="11">White</option>
+    </select>
+    <select id="OtherPattern">
+        <option value="">--Select Other Pattern--</option>
+        <option value="1">Plain</option>
+        <option value="2">Animal Print</option>
+        <option value="3">Camo</option>
+        <option value="4">Floral</option>
+        <option value="5">Graphic</option>
+        <option value="6">Ombre</option>
+        <option value="7">Plaid</option>
+        <option value="8">Polka Dot</option>
+        <option value="9">Stripes</option>
+        <option value="10">Multi</option>
+        <option value="11">Checkered</option>
+    </select>
+    <button id="addOther" onclick="addShirt()" value="Submit">Add Other</button>
+</div>
+</body>
+</html>
