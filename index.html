@@ -10,6 +10,7 @@
 <div id="everything">
     <h1>Outfit Picker</h1>
     <h2>Select Shirt</h2>
+    <div id="shirts">
     <select id="ShirtType">
         <option value="">--Select Shirt Type--</option>
         <option value="1">Long Sleeve Top</option>
@@ -39,6 +40,7 @@
         <option value="9">Black</option>
         <option value="10">Grey</option>
         <option value="11">White</option>
+        <option value="12">Nude</option>
     </select>
     <select id="ShirtPattern">
         <option value="">--Select Shirt Pattern--</option>
@@ -55,8 +57,10 @@
         <option value="11">Checkered</option>
     </select>
     <button id="addShirt" onclick="addShirt()" value="Submit">Add Shirt</button>
-    <br>
+    </div>
+    <div id="newShirts"></div>
     <h2>Select Pant</h2>
+    <div id="pants">
     <select id="PantType">
         <option value="">--Select Pant Type--</option>
         <option value="1">Skinny Jeans</option>
@@ -83,6 +87,7 @@
         <option value="9">Black</option>
         <option value="10">Grey</option>
         <option value="11">White</option>
+        <option value="12">Nude</option>
     </select>
     <select id="PantPattern">
         <option value="">--Select Pant Pattern--</option>
@@ -99,8 +104,10 @@
         <option value="11">Checkered</option>
     </select>
     <button id="addPant" onclick="addPant()" value="Submit">Add Pant</button>
-    <br>
+    </div>
+    <div id="newPants"></div>
     <h2>Select Other</h2>
+    <div id="others">
     <select id="Other">
         <option value="">--Other--</option>
         <option value="1">Casual Dress</option>
@@ -125,6 +132,7 @@
         <option value="9">Black</option>
         <option value="10">Grey</option>
         <option value="11">White</option>
+        <option value="12">Nude</option>
     </select>
     <select id="OtherPattern">
         <option value="">--Select Other Pattern--</option>
@@ -140,7 +148,11 @@
         <option value="10">Multi</option>
         <option value="11">Checkered</option>
     </select>
-    <button id="addOther" onclick="addShirt()" value="Submit">Add Other</button>
+    <button id="addOther" onclick="addOther()" value="Submit">Add Other</button>
+    </div>
+    <div id="newOthers"></div>
+    <br>
+    <button id="submit" onclick="submit()" value="Submit">Submit</button>
 </div>
 </body>
 </html>
