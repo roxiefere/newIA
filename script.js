@@ -11,34 +11,28 @@ function addOther(){
     document.getElementById("newOthers").appendChild(others);
 }
 function makeOutfits() {
-    var shirtT = document.getElementById("ShirtType").value;
-    var shirtC = document.getElementById("ShirtColor").value;
-    var shirtP = document.getElementById("ShirtPattern").value;
-    var pantT = document.getElementById("PantType").value;
-    var pantC = document.getElementById("PantColor").value;
-    var pantP = document.getElementById("PantPattern").value;
-    var otherT = document.getElementById("OtherType").value;
-    var otherC = document.getElementById("OtherColor").value;
-    var otherP = document.getElementById("OtherPattern").value;
-}
-function typeMatch() {
-    var shirtT = document.getElementById("ShirtType").value;
-    var pantT = document.getElementById("PantType").value;
-    var otherT = document.getElementById("OtherType").value;
-    if(shirtT){
-
+    var shirtT = parseInt(document.getElementById("ShirtType").value);
+    var shirtC = parseInt(document.getElementById("ShirtColor").value);
+    var shirtP = parseInt(document.getElementById("ShirtPattern").value);
+    var pantT = parseInt(document.getElementById("PantType").value);
+    var pantC = parseInt(document.getElementById("PantColor").value);
+    var pantP = parseInt(document.getElementById("PantPattern").value);
+    var otherT = parseInt(document.getElementById("OtherType").value);
+    var otherC = parseInt(document.getElementById("OtherColor").value);
+    var otherP = parseInt(document.getElementById("OtherPattern").value);
+    if ((10101 <= (shirtT + shirtC + shirtP) <= 10211) || (10801 <= (shirtT + shirtC + shirtP) <= 10811)) {
+        document.getElementById("result").innerHTML = "You should wear skinny jeans, shorts, overalls, ripped jeans, leggings, or sweat pants with this shirt.";
     }
-}
-function colorMatch() {
-    var shirtC = document.getElementById("ShirtColor").value;
-    var pantC = document.getElementById("PantColor").value;
-    var otherC = document.getElementById("OtherColor").value;
-}
-function patternMatch() {
-    var shirtP = document.getElementById("ShirtPattern").value;
-    var pantP = document.getElementById("PantPattern").value;
-    var otherP = document.getElementById("OtherPattern").value;
-}
-function submit() {
-
+    if (10301 <= (shirtT + shirtC + shirtP) == 10411) {
+        document.getElementById("result").innerHTML = "You should wear ";
+    }
+    if (10501 <= (shirtT + shirtC + shirtP) == 10711) {
+        document.getElementById("result").innerHTML = "You should wear ";
+    }
+    if (10801 <= (shirtT + shirtC + shirtP) == 1211) {
+        document.getElementById("result").innerHTML = "You should wear ";
+    }
+    if (10901 <= (shirtT + shirtC + shirtP) == 11111) {
+        document.getElementById("result").innerHTML = "You should wear ";
+    }
 }
