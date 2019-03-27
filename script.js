@@ -1,4 +1,3 @@
-//
 function makeOutfits() {
     var shirtT = parseInt(document.getElementById("ShirtType").value);
     var shirtC = parseInt(document.getElementById("ShirtColor").value);
@@ -12,7 +11,7 @@ function makeOutfits() {
     //clear div
     document.getElementById("result").innerHTML = "";
     //similar shirt types
-    if (shirtT == 1 || shirtT == 5 || shirtT == 6) {
+    if (shirtT == 1 || shirtT == 6) {
         shirtT = 1000;
     }
     if (shirtT == 3 || shirtT == 9 || shirtT == 10) {
@@ -32,10 +31,7 @@ function makeOutfits() {
         pantT = 3000;
     }
     //similar other types
-    if (otherT == 5 || otherT == 6) {
-        otherT = 5000;
-    }
-    if (otherT == 7 || otherT == 8) {
+    if (otherT == 6 || otherT == 7) {
         otherT = 6000;
     }
     //colors that go together
@@ -52,7 +48,7 @@ function makeOutfits() {
         shirtC = 200;
     }
     if (pantC == 3 || pantC == 4) {
-        pantC == 200;
+        pantC = 200;
     }
     if (otherC == 3 || otherC == 4) {
         otherC = 200;
@@ -85,22 +81,22 @@ function makeOutfits() {
     if (otherP == 1 || otherP == 6) {
         otherP = 10;
     }
-    if (shirtP == 2 || shirtP == 3 || shirtP == 4 || shirtP == 5 || shirtP == 10) {
+    if (shirtP == 2 || shirtP == 3 || shirtP == 4 || shirtP == 5 || shirtP == 11) {
         shirtP = 20;
     }
-    if (pantP == 2 || pantP == 3 || pantP == 4 || pantP == 5 || pantP == 10) {
+    if (pantP == 2 || pantP == 3 || pantP == 4 || pantP == 5 || pantP == 11) {
         pantP = 20;
     }
-    if (otherP == 2 || otherP == 3 || otherP == 4 || otherP == 5 || otherP == 10) {
+    if (otherP == 2 || otherP == 3 || otherP == 4 || otherP == 5 || otherP == 11) {
         otherP = 20;
     }
-    if (shirtP == 8 || shirtP == 9 || shirtP == 11) {
+    if (shirtP == 8 || shirtP == 9 || shirtP == 12) {
         shirtP = 30;
     }
-    if (pantP == 8 || pantP == 9 || pantP == 11) {
+    if (pantP == 8 || pantP == 9 || pantP == 12) {
         pantP = 30;
     }
-    if (otherP == 8 || otherP == 9 || otherP == 11) {
+    if (otherP == 8 || otherP == 9 || otherP == 12) {
         otherP = 30;
     }
     //makes sure all fields are filled out
@@ -118,7 +114,7 @@ function makeOutfits() {
     }
     if (shirtT == 2000) {
         document.getElementById("result").innerHTML += "<h3>Shirt Type:</h3>";
-        document.getElementById("result").innerHTML += "You can wear any type of listed pants with this shirt." + "<br>" + "Additionally, a tight shirts pair best with looser pants or a skirt, while a relaxed, looser shirts go well with high-waisted jeans or shorts for a casual look." + "<br>";
+        document.getElementById("result").innerHTML += "You can wear any type of listed pants with this shirt." + "<br>" + "Additionally, a tight shirts pair best with looser pants or a skirt." + "<br>" + "Relaxed, looser shirts go well with high-waisted jeans or shorts for a casual look." + "<br>";
     }
     if (shirtT == 3000) {
         document.getElementById("result").innerHTML += "<h3>Shirt Type:</h3>";
@@ -134,24 +130,31 @@ function makeOutfits() {
     }
     if (shirtT == 6000) {
         document.getElementById("result").innerHTML += "<h3>Shirt Type:</h3>";
-        document.getElementById("result").innerHTML += "You should stick to jeans for a casual yet fashionable look with this shirt." + "<br>" + "Black jeans make a particularly stylish choice with an edgy grunge vibe, but any colour can work." + "<br>";
+        document.getElementById("result").innerHTML += "You should stick to jeans for a casual yet fashionable look with this shirt." + "<br>" + "Black jeans make a particularly stylish choice with an edgy grunge vibe, but any color can work." + "<br>";
     }
     if (shirtT == 7000) {
         document.getElementById("result").innerHTML += "<h3>Shirt Type:</h3>";
         document.getElementById("result").innerHTML += "You should wear anything with this shirt." + "<br>" + "It's casual and dependable, so it goes with almost any type of pants." + "<br>";
     }
+    if (shirtT == 8000) {
+        document.getElementById("result").innerHTML += "<h3>Shirt Type:</h3>";
+        document.getElementById("result").innerHTML += "You should wear plain pants such as jeans or sweats as to not take away from the print on the jersey" + "<br>";
+    }
     //color outputs
-    document.getElementById("result").innerHTML += "<h3>Color:</h3>";
     if (shirtC == 100) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with white, black, yellow, silver, green, and gold." + "<br>";
     }
     if (shirtC == 200) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with neutrals: white, gray and black. " + "<br>";
     }
     if (shirtC == 300) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with similar ocean tones, for example, greens and browns." + "<br>" + "It also goes well with neutrals: white, gray and black." + "<br>";
     }
     if (shirtC == 400) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with most other colors." + "<br>" + "Pay attention to their undertones for a more perfect color match" + "<br>";
     }
     //pattern outputs
@@ -169,45 +172,48 @@ function makeOutfits() {
     }
     if (shirtP == 40) {
         document.getElementById("result").innerHTML += "<h3>Pattern:</h3>";
-        document.getElementById("result").innerHTML += "This pattern Wear one plaid piece of clothing at a time." + "<br>" + "Plaid comes in many different colors and styles." + "<br>" + "However, its crisscrossing lines mean it's almost always fairly attention-grabbing." + "<br>" + "This means pairing multiple pieces of plaid clothing with each other can be overwhelming or busy to look at." + "<br>" + "The expection to this rule is if the accessory piece is plaid." + "<br>";
+        document.getElementById("result").innerHTML += "This pattern Wear one plaid piece of clothing at a time." + "<br>" + "Plaid comes in many different colors and styles." + "<br>" + "However, its crisscrossing lines mean it's almost always fairly attention-grabbing." + "<br>" + "This means pairing multiple pieces of plaid clothing with each other can be overwhelming or busy to look at." + "<br>" + "The exception to this rule is if the accessory piece is plaid." + "<br>";
     }
     //pant type outputs
     if (pantT == 1000) {
         document.getElementById("result").innerHTML += "<h3>Pant Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear almost any top with these pants." + "<br>" + "Jeans are very dependable pants that can be worn in most weather conditions and create a very casual look." + "<br>";
     }
     if (pantT == 2000) {
         document.getElementById("result").innerHTML += "<h3>Pant Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear almost any top with these pants." + "<br>" + "Shorts are usually worn during warmer weather so they are best paired with summer tops." + "<br>" + "Be mindful of the fabric-to-skin ratio and chose your top accordingly." + "<br>";
     }
     if (pantT == 3000) {
         document.getElementById("result").innerHTML += "<h3>Pant Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear a loose top such as a basic T to go with the flowy make of these pants for a casual look." + "<br>" + "These pants can easily be worn with any top since they are quite casual." + "<br>";
     }
     if (pantT == 4000) {
         document.getElementById("result").innerHTML += "<h3>Pant Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear a plain basic top such as short/long sleeve, crop top, tube top, or tank top." + "<br>" + "Since most cargo pants come in greens or tans, refer to the color match for a shirt color." + "<br>";
     }
     if (pantT == 5000) {
         document.getElementById("result").innerHTML += "<h3>Pant Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear a basic top such as a short/long sleeve, crop top, tube top, or tank top." + "<br>" + "Since the top is often not the main piece in this outfit, it's essential not to take away from the visual appeal of the overalls." + "<br>";
     }
     if (pantT == 6000) {
         document.getElementById("result").innerHTML += "<h3>Pant Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear a top you can easily move in." + "<br>" + "Since leggings are often worn as athletic wear, it isn't fitting to wear a top such as a blouse with these pants." + "<br>";
     }
     //color outputs
-    document.getElementById("result").innerHTML += "<h3>Color:</h3>";
     if (pantC == 100) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with white, black, yellow, silver, green, and gold." + "<br>";
     }
     if (pantC == 200) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with neutrals: white, gray and black. " + "<br>";
     }
     if (pantC == 300) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with similar ocean tones, for example, greens and browns." + "<br>" + "It also goes well with neutrals: white, gray and black." + "<br>";
     }
     if (pantC == 400) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with most other colors." + "<br>" + "Pay attention to their undertones for a more perfect color match" + "<br>";
     }
     //pattern outputs
@@ -225,12 +231,12 @@ function makeOutfits() {
     }
     if (pantP == 40) {
         document.getElementById("result").innerHTML += "<h3>Pattern:</h3>";
-        document.getElementById("result").innerHTML += "This pattern Wear one plaid piece of clothing at a time." + "<br>" + "Plaid comes in many different colors and styles." + "<br>" + "However, its crisscrossing lines mean it's almost always fairly attention-grabbing." + "<br>" + "This means pairing multiple pieces of plaid clothing with each other can be overwhelming or busy to look at." + "<br>" + "The expection to this rule is if the accessory piece is plaid." + "<br>";
+        document.getElementById("result").innerHTML += "This pattern Wear one plaid piece of clothing at a time." + "<br>" + "Plaid comes in many different colors and styles." + "<br>" + "However, its crisscrossing lines mean it's almost always fairly attention-grabbing." + "<br>" + "This means pairing multiple pieces of plaid clothing with each other can be overwhelming or busy to look at." + "<br>" + "The exception to this rule is if the accessory piece is plaid." + "<br>";
     }
     //other type outputs
     if (otherT == 1000) {
         document.getElementById("result").innerHTML += "<h3>Other Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear a jacket or coat that doesn't fully cover the dress." + "<br>" + "It'll takes away from the main garmet." + "<br>";
+        document.getElementById("result").innerHTML += "You should wear a jacket or coat that doesn't fully cover the dress." + "<br>" + "It'll takes away from the main garment." + "<br>";
     }
     if (otherT == 2000) {
         document.getElementById("result").innerHTML += "<h3>Other Type:</h3>";
@@ -246,24 +252,27 @@ function makeOutfits() {
     }
     if (otherT == 5000) {
         document.getElementById("result").innerHTML += "<h3>Other Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear a denim layer—like a vest for a casual look." + "<br>" + "Alternatively, try a jean jacket tied around your waist for a cool-girl vibe." + "<br>" + "Rompers can be worn by themselves too since they double as a top and pants." + "<br>";
     }
     if (otherT == 6000) {
         document.getElementById("result").innerHTML += "<h3>Other Type:</h3>";
-        document.getElementById("result").innerHTML += "You should wear " + "<br>";
+        document.getElementById("result").innerHTML += "You should wear jewelery along with a small purse or tote." + "<br>" + "This dress is often worn out in an elegant, formal setting such as prom or a party." + "<br>";
     }
     //color outputs
-    document.getElementById("result").innerHTML += "<h3>Color:</h3>";
     if (otherC == 100) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with white, black, yellow, silver, green, and gold." + "<br>";
     }
     if (otherC == 200) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with neutrals: white, gray and black. " + "<br>";
     }
     if (otherC == 300) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with similar ocean tones, for example, greens and browns." + "<br>" + "It also goes well with neutrals: white, gray and black." + "<br>";
     }
     if (otherC == 400) {
+        document.getElementById("result").innerHTML += "<h3>Color:</h3>";
         document.getElementById("result").innerHTML += "This color pairs well with most other colors." + "<br>" + "Pay attention to their undertones for a more perfect color match" + "<br>";
     }
     //pattern outputs
