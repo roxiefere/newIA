@@ -1,3 +1,4 @@
+//
 function makeOutfits() {
     var shirtT = parseInt(document.getElementById("ShirtType").value);
     var shirtC = parseInt(document.getElementById("ShirtColor").value);
